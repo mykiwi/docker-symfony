@@ -12,7 +12,14 @@ docker run -d \
   romqin/symfony
 ```
 
-### Console
+### Open the website
+
+```
+xdg-open "http://`docker inspect --format="{{.NetworkSettings.IPAddress}}" project_name`"
+# You can replacer xdg-open with firefox or something else
+```
+
+### Symfony console
 
 ```
 docker exec -ti project_name app/console
