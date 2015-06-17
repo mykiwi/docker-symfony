@@ -16,7 +16,7 @@ docker run -d \
 
 ```
 xdg-open "http://`docker inspect --format="{{.NetworkSettings.IPAddress}}" project_name`"
-# You can replacer xdg-open with firefox or something else
+# You can replace xdg-open with firefox or something else
 ```
 
 ### Symfony console
