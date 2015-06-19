@@ -8,6 +8,7 @@ An easy way to launch a Symfony application with Docker
 docker run -d \
   -v `pwd`:/srv \
   -p 80:80 \
+  -u `id -u` \
   --name project_name \
   romqin/symfony
 ```
